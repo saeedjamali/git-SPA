@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'iranyekan';
+    src: url(./assest/fonts/BYekan.woff) format('woff'),
+        url(/assest/fonts/BYekan.woff2) format('woff2');
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "iranyekan";
+    list-style: none;
+
+}
+
+
+:root {
+    --primaryColor: #6d28d9;
+    --secondaryColor: #ede9fe;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGray: #7c7c7c;
+    --secondaryGray: #ccc;
+    --mainRed: #db2777;
+    --bodyColor: #f6f6f6;
+    --mainSpacing: 0.1rem;
+    --mainTransition: all 0.3s linear;
+}
+
+
+html {
+    font-size: 0.625rem;
+}
+
+body {
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+
+}
+
+
+
+.container {
+    display: flex;
+
+}
+
+/* navbar */
+.nav {
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: var(--primaryColor);
+    width: 20rem;
+    height: 100vh;
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--mainWhite);
+    border-radius: 3.6rem 0 0 0;
+}
+
+.nav__logo p {
+    height: 10rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.nav__slidebar {
+    width: 100%;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.slidebar__link {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--mainWhite);
+    display: block;
+    height: 6rem;
+    line-height: 6rem;
+    width: 100%;
+
+}
+
+
+.slidebar__link:hover {
+    background-color: var(--mainRed);
+}
+
+
+
+#app{
+    margin: 2rem;
+    font-size: 6rem;
+
+}
