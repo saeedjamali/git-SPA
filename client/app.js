@@ -44,12 +44,12 @@ function router(params) {
         };
     });
 
-    const matchView = potentialRoutes.find((route) => route.isMatch);
+    let matchView = potentialRoutes.find((route) => route.isMatch);
     if (!matchView) {
         matchView = {
             route: { path: "/not-found", view: NotFound }, isMatch: true
         }
-        console.log("Ey basdasd");
+        console.log("Ey ");
     }
 
     app.innerHTML = matchView.route.view();
