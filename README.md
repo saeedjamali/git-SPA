@@ -1,6 +1,6 @@
 # git-SPA
 this project use concept of SPA (single page Application)
-Concept use this project : 
+use this project : 
 
 //*  What Todo
 //1- Create Object contain path and view()
