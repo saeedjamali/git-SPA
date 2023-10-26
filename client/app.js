@@ -14,6 +14,12 @@ import { Post } from "./pages/post.js";
 import { NotFound } from "./pages/not-found.js";
 
 const app = document.querySelector("#app");
+const navToggle = document.querySelector(".arrow-toggle");
+const nav = document.querySelector(".nav");
+
+
+navToggle.addEventListener("click", navSlide);
+
 document.addEventListener("DOMContentLoaded", () => {
 
     router();
@@ -29,6 +35,15 @@ window.addEventListener("click", (e) => {
 })
 
 addEventListener("popstate", router);
+
+function navSlide() {
+    console.log(nav.classList);
+    nav.classList.toggle("nav--toggle");
+}
+
+
+
+
 
 
 function router(params) {

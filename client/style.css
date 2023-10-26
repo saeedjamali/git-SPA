@@ -17,6 +17,7 @@
 
 :root {
     --primaryColor: #6d28d9;
+    --hoverColor: #9f74e6;
     --secondaryColor: #ede9fe;
     --mainWhite: #fff;
     --mainBlack: #222;
@@ -61,6 +62,7 @@ body {
     align-items: center;
     color: var(--mainWhite);
     border-radius: 3.6rem 0 0 0;
+    text-wrap: nowrap;
 }
 
 .nav__logo p {
@@ -75,8 +77,13 @@ body {
 
 .nav__slidebar {
     width: 100%;
-    text-align: center;
+    text-align: right;
     flex-grow: 1;
+
+}
+
+.slidebar__link i{
+padding: 0 1rem;
 }
 
 .slidebar__link {
@@ -93,13 +100,56 @@ body {
 
 
 .slidebar__link:hover {
-    background-color: var(--mainRed);
+    background-color: var(--hoverColor);
+    border-radius: 0.8rem;
+    margin:0 0.5rem ;
+
 }
 
 
-
-#app{
+#app {
     margin: 2rem;
     font-size: 6rem;
 
+}
+
+.arrow-toggle i {
+    position: absolute;
+    /* width: 2.2rem;
+    height: 2.2rem; */
+    background-color: var(--mainWhite);
+    bottom: 3rem;
+    left: -1.2rem;
+    z-index: 20;
+    border-radius: 50%;
+    color: var(--primaryColor);
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow-toggle:hover i{
+    /* transform: rotateY(180deg ); */
+    box-shadow: 0.5rem 0.5rem 0.5rem #864ae7;
+}
+
+
+.nav.nav--toggle {
+    width: 4rem;
+}
+
+.nav.nav--toggle .nav__logo p{
+    font-size: 1.6rem;
+    writing-mode: vertical-rl;
+    margin-bottom: 2rem;
+}
+
+.nav.nav--toggle .nav__version p{
+    font-size: 1.6rem;
+    writing-mode: vertical-rl;
+    margin-bottom: 6rem;
+
+}
+
+
+.nav.nav--toggle .arrow-toggle i{
+    transform: rotateY(180deg );
 }
