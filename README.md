@@ -12,4 +12,5 @@ use this project :
 
 and sliding navigation ....
 
+node is start before run project : node server.js
 good job
