@@ -3,7 +3,7 @@ const path = require("path");
 
 
 const app = express();
-app.use('/client',express.static(path.resolve(__dirname, "client")));
+app.use('/client',express.static(path.resolve(__dirname, "client","index.html")));
 app.get('/*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client', 'index.html'));
 })
